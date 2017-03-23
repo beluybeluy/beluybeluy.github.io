@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=&amp;extension=.js"></script>
+    <script src="https://cdn.mapkit.io/v1/infobox.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.mapkit.io/v1/infobox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/fancybox/lib/jquery.mousewheel.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css">
+    <script src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+  </head>
+  <body>
+    <header class="header change-bg">
+      <div class="container">
+        <nav class="header__navbar clearfix">
+          <div class="logo"><a class="logo__wrap"><img class="logo__img_light" src="img/logo.png"><img class="logo__img_dark change" src="img/logo-dark.png"></a></div><a class="touch__nav" href=""> <span class="touch__nav_item"></span><span class="touch__nav_item"></span><span class="touch__nav_item">     </span></a>
+          <div class="menu">
+            <ul class="menu__wrapper clearfix">
+              <li class="menu__item"><a class="menu__link" href="#" onclick="slowScroll('.home')">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#" onclick="slowScroll('.products')">Products</a></li>
+              <li class="menu__item"><a class="menu__link" href="#" onclick="slowScroll('.services')">Service</a></li>
+              <li class="menu__item"> <a class="menu__link" href="#" onclick="slowScroll('.works')">Work</a></li>
+              <li class="menu__item"> <a class="menu__link" href="#" onclick="slowScroll('.prices')">Pricing</a></li>
+              <li class="menu__item"> <a class="menu__link" href="#" onclick="slowScroll('.footer')">Contact    </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="home">
+      <div class="container">
+        <h1 class="home__title animated fadeInDownBig">Digital Product Agency.</h1>
+        <h3 class="home__text animated fadeInDownBig">Look no further. You came to right ... place</h3>
+        <div class="home__btn"> 
+          <div class="bg"></div><a class="home__btn_link"> &#9658;  Watch video</a>
+        </div>
+      </div>
+    </div>
+    <section class="products">
+      <div class="container">
+        <div class="products__title">Latest Products</div>
+        <div class="products__text">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut
+          laboret dolore magna aliqua enim minim veniam exercitation
+        </div>
+        <div class="products__wrap">  
+          <div class="products__item">
+            <div class="products__img_wrap"><span class="products__img_hover">description</span><img class="products__img_item" src="img/products-1.jpg"></div>
+            <h1 class="products__item_title">Workspace<span class="products__item_link">Managment</span></h1>
+            <p class="products__item_descriptions">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p><span class="products__item_more">Read more</span>
+          </div>
+          <div class="products__item">
+            <div class="products__img_wrap"><span class="products__img_hover">description</span><img class="products__img_item" src="img/products-2.jpg"></div>
+            <h1 class="products__item_title">Minimalism<span class="h3 products__item_link">Development</span></h1>
+            <p class="products__item_descriptions">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p><span class="products__item_more">Read more</span>
+          </div>
+          <div class="products__item">
+            <div class="products__img_wrap"><span class="products__img_hover">description</span><img class="products__img_item" src="img/products-3.jpg"></div>
+            <h1 class="products__item_title">Client Style<span class="h3 products__item_link">Design</span></h1>
+            <p class="products__item_descriptions">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p><span class="products__item_more">Read more</span>
+          </div>
+        </div>
+        <div class="products__footer">
+          <div class="products__footer_wrap">
+            <div class="products__footer_item">
+              <div class="products__footer_left">
+                <div class="products__footer_hover">Descriptions</div>
+              </div>
+            </div>
+            <div class="products__footer_item"> 
+              <div class="products__footer_right">
+                <div class="products__footer_hover">Descriptions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__wrap">
+          <div class="services__item">
+            <div class="services__icon_wrap"><i class="services__item_icon icon-chemistry"></i></div>
+            <div class="services__item_title">Art of Coding</div>
+            <div class="services__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</div>
+          </div>
+          <div class="services__item animated">
+            <div class="services__icon_wrap"><i class="services__item_icon icon-screen-tablet col__white"></i></div>
+            <div class="services__item_title">Responsive Design</div>
+            <div class="services__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon_wrap"><i class="services__item_icon icon-badge"></i></div>
+            <div class="services__item_title">Feature Reach</div>
+            <div class="services__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor      </div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon_wrap"><i class="services__item_icon icon-notebook"></i></div>
+            <div class="services__item_title">Useful Documentation</div>
+            <div class="services__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon_wrap"><i class="services__item_icon icon-speedometer"> </i></div>
+            <div class="services__item_title">Fast Delivery</div>
+            <div class="services__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</div>
+          </div>
+          <div class="services__item">
+            <div class="services__icon_wrap"><i class="services__item_icon icon-badge"></i></div>
+            <div class="services__item_title">Free Plugins</div>
+            <div class="services__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor      </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <h1 class="banner__title">Displaying the Result</h1>
+        <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      </div>
+    </section>
+    <section class="works">
+      <div class="container">
+        <div class="works__wrap">
+          <div class="works__item"><a class="works__photo" rel="gallery" href="img/big/works-1.jpg"><img class="works__item_img" src="img/small/works-1.jpg"><span class="works__item_desc"><span>description</span></span></a></div>
+          <div class="works__item"><a class="works__photo" rel="gallery" href="img/big/works-2.jpg"><img class="works__item_img" src="img/small/works-2.jpg"><span class="works__item_desc"><span>description</span></span></a></div>
+          <div class="works__item"><a class="works__photo" rel="gallery" href="img/big/works-3.jpg"><img class="works__item_img" src="img/small/works-3.jpg"><span class="works__item_desc"><span>description</span></span></a></div>
+          <div class="works__item"><a class="works__photo" rel="gallery" href="img/big/works-4.jpg"><img class="works__item_img" src="img/small/works-4.jpg"><span class="works__item_desc"> <span>description</span></span></a></div>
+          <div class="works__item"><a class="works__photo" rel="gallery" href="img/big/works-5.jpg"><img class="works__item_img" src="img/small/works-5.jpg"><span class="works__item_desc"><span>description</span></span></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="container">
+        <div class="prices__wrap">
+          <div class="prices__item"><i class="prices__item_img icon-chemistry"></i>
+            <div class="prices__item_title">Starter Kit 49 $</div>
+            <div class="prices__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</div>
+            <ul class="prices__item_list">
+              <li class="prices__item_link">Basic Features</li>
+              <li class="prices__item_link">Up to 5 products</li>
+              <li class="prices__item_link">50 Users Panels</li>
+            </ul><a class="prices__item_btn">Choose</a>
+          </div>
+          <div class="prices__item"><i class="prices__item_img icon-badge"></i>
+            <div class="prices__item_title">Proffesional 149 $</div>
+            <div class="prices__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</div>
+            <ul class="prices__item_list">
+              <li class="prices__item_link">Basic Features</li>
+              <li class="prices__item_link">Up to 100 products</li>
+              <li class="prices__item_link">100 Users Panels</li>
+            </ul><a class="prices__item_btn">Choose</a>
+          </div>
+          <div class="prices__item"><i class="prices__item_img icon-shield"></i>
+            <div class="prices__item_title">Advanced 249 $</div>
+            <div class="prices__item_text">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</div>
+            <ul class="prices__item_list">
+              <li class="prices__item_link">Extended Features</li>
+              <li class="prices__item_link">Unlimiteds products</li>
+              <li class="prices__item_link">Unlimiteds Users Panels</li>
+            </ul><a class="prices__item_btn">Choose   </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="sl">
+          <div class="sl__slide"><img class="sl__img" src="img/sl-9.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 1</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-1.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 2</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-2.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 3</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-3.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 4</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-4.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 5</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-5.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 6</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-6.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 7</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-7.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 8</h3>
+              <p class="sl__title_desc">Descriptions for slide</p>
+            </div>
+          </div>
+          <div class="sl__slide"><img class="sl__img" src="img/sl-8.jpg" alt="sliders image">
+            <div class="sl__text">
+              <h3 class="sl__text_title">Slide 9</h3>
+              <p class="sl__title_desc">Descriptions for slide         </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div id="mapkit"></div>
+    </section>
+    <section class="navigation">
+      <div class="container"> 
+        <div class="navigation__wrap">
+          <ul class="navigation__item">
+            <li class="navigation__item_li"><a class="navigation__item_link">Home</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">About</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Work</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Contact</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Twitter</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Facebook</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Instagram</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">YouTube</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Subscribe to Our Newsletter</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Privacy Policy</a></li>
+            <li class="navigation__item_li"><a class="navigation__item_link">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap"><img class="footer__logo_img" src="img/logo-dark.png">
+          <h5 class="footer__author"> Developed by: &#169; Ruslan Biletskyi</h5>
+        </div>
+      </div>
+    </footer>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/slick.js"></script>
+  </body>
+</html>

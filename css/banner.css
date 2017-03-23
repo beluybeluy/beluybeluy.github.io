@@ -1,0 +1,16 @@
+.banner {
+  padding: 130px 0;
+  text-align: center;
+  background: url(/img/banner-bg.jpg) center center no-repeat fixed;
+  background-size: cover; }
+  .banner__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 20px 0 20px 0;
+    color: #fff; }
+  .banner__text {
+    font: 20px/22px RobotoBlack, sans-serif;
+    font-weight: 200;
+    color: #fff;
+    padding: 15px 50px; }
