@@ -1,0 +1,363 @@
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../fonts/OpenSans-Bold.ttf); }
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(../fonts/OpenSans-Light.ttf); }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  padding: 0px 140px;
+  margin: auto; }
+
+.container_theme-grey {
+  background: #969696; }
+
+.button {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 25px/35px OpenSansBold, sans-serif;
+  display: inline-block;
+  padding: 20px 45px;
+  background: #f25741;
+  cursor: pointer; }
+  .button:hover {
+    background: #fff;
+    color: #f25741;
+    -webkit-transition: .5s ease-in;
+    transition: .5s ease-in; }
+
+@-webkit-keyframes rotateImg {
+  0% { }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotateImg {
+  0% { }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.header {
+  padding: 55px 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  content-items: center; }
+  .header-banner {
+    position: absolute;
+    top: 100%;
+    background: url(../img/header-banner.png) center no-repeat;
+    background-size: cover;
+    height: 50px;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 10px 10px 20px #d6d3d3;
+            box-shadow: 10px 10px 20px #d6d3d3; }
+  .header-logo {
+    height: 100px; }
+    .header-logo__img {
+      max-height: 100%; }
+    .header-logo__txt {
+      font: 22px/22px Arial; }
+  .header-date__title {
+    text-align: right;
+    font: 42px/52px OpenSansBold;
+    font-weight: 800;
+    text-transform: uppercase; }
+    .header-date__title_think {
+      font: 42px/52px OpenSansLight;
+      text-transform: capitalize; }
+
+.info {
+  text-align: center;
+  padding: 140px 0; }
+  .info-logo {
+    max-width: 250px;
+    height: auto;
+    -webkit-animation: rotateImg 2s infinite alternate;
+            animation: rotateImg 2s infinite alternate; }
+  .info-title {
+    font: 44px/44px OpenSansLight;
+    font-weight: 100;
+    padding: 60px 0; }
+  .info-date {
+    font: 44px/50px OpenSansLight;
+    font-weight: 100; }
+
+.about {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #fff; }
+  .about__title {
+    text-transform: uppercase;
+    font: 40px/50px OpenSansBold; }
+  .about-article {
+    margin: 80px auto; }
+    .about-article__title {
+      font: 48px/48px OpenSansBold, sans-serif; }
+    .about-article__description {
+      text-align: justify;
+      margin: auto;
+      padding-top: 20px;
+      font: 42px/52px OpenSansLight, sans-serif;
+      font-weight: 100; }
+      .about-article__description_bottom {
+        text-align: center;
+        padding-top: 30px; }
+
+.speakers {
+  text-align: center;
+  color: #fff;
+  padding: 0 40px; }
+  .speakers__title {
+    font: 42px/52px OpenSansLight, sans-serif;
+    font-weight: 100;
+    padding-bottom: 50px; }
+  .speakers-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-top: 50px; }
+  .speakers-person {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 300px;
+        -ms-flex: 0 300px;
+            flex: 0 300px;
+    width: 300px;
+    min-height: 300px; }
+    .speakers-person_first {
+      background: url(../img/JohnWillis.jpg) no-repeat top;
+      background-size: cover; }
+    .speakers-person_second {
+      background: url(../img/Scott_Thomson.jpg) no-repeat top;
+      background-size: cover; }
+    .speakers-person_third {
+      background: url(../img/KeithBawden.png) no-repeat top;
+      background-size: cover; }
+    .speakers-person_fourth {
+      background: url(../img/Scott_Coulton.png) no-repeat top;
+      background-size: cover; }
+    .speakers-person_five {
+      background: url(../img/AlexBalk.jpg) no-repeat top;
+      background-size: cover; }
+    .speakers-person__img {
+      height: 100%;
+      width: 100%; }
+  .speakers-info {
+    margin-left: 30px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 500px;
+        -ms-flex: 0 500px;
+            flex: 0 500px; }
+    .speakers-info__logo {
+      width: 100%;
+      height: 100px; }
+      .speakers-info__logo_docker {
+        background: url(../img/docker-logo.png) no-repeat;
+        background-size: contain; }
+      .speakers-info__logo_google {
+        background: url(../img/Google_logo.png) no-repeat;
+        background-size: contain; }
+      .speakers-info__logo_flippa {
+        background: url(../img/flippa.png) no-repeat;
+        background-size: contain; }
+      .speakers-info__logo_puppets {
+        background: url(../img/puppets_logo.png) no-repeat;
+        background-size: contain; }
+      .speakers-info__logo_outbrain {
+        background: url(../img/outbrain-logo.png) no-repeat;
+        background-size: contain; }
+    .speakers-info__article {
+      padding-top: 20px; }
+    .speakers-info__link {
+      color: #fff;
+      text-transform: uppercase;
+      font: 35px/35px OpenSansBold, sans-serif;
+      font-weight: 900; }
+    .speakers-info__desc {
+      font: 35px/45px OpenSansLight, sans-serif;
+      font-weight: 100;
+      padding-top: 20px; }
+      .speakers-info__desc_bold {
+        font: 35px/45px OpenSansBold, sans-serif; }
+
+.advertise {
+  padding: 50px 180px;
+  text-align: center; }
+  .advertise-button {
+    margin-top: 40px; }
+  .advertise_article {
+    margin: 40px 0; }
+  .advertise__desc {
+    text-align: left;
+    color: #fff;
+    font: 35px/45px OpenSansLight, sans-serif;
+    font-weight: 100; }
+  .advertise-wrap {
+    margin: 50px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .advertise-item {
+    text-align: center;
+    margin: 20px auto; }
+    .advertise-item img {
+      max-width: 100%;
+      height: auto; }
+    .advertise-item_two {
+      max-width: 380px;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 380px;
+          -ms-flex: 1 380px;
+              flex: 1 380px; }
+    .advertise-item_three {
+      max-width: 240px;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 240px;
+          -ms-flex: 1 240px;
+              flex: 1 240px; }
+
+.footer {
+  padding: 55px;
+  position: relative;
+  margin-top: 100px;
+  text-align: center; }
+  .footer-banner {
+    position: absolute;
+    top: 0;
+    background: url(../img/footer-banner.png) center no-repeat;
+    background-size: cover;
+    height: 50px;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: -10px -10px 20px #d6d3d3;
+            box-shadow: -10px -10px 20px #d6d3d3; }
+  .footer__link {
+    color: #000;
+    text-decoration: none;
+    font: 30px/30px OpenSansLight; }
+    .footer__link_bold {
+      font-family: OpenSansBold; }
+  .footer__address {
+    margin-top: 40px;
+    font: 30px/40px OpenSansLight; }
+
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 60px 20px; }
+    .about-article__description {
+      font-size: 38px; }
+  .advertise {
+    padding: 50px 40px; } }
+
+@media screen and (max-width: 768px) {
+  .header {
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap;
+    padding: 30px 20px; }
+    .header-logo {
+      height: 80px; }
+      .header-logo__txt {
+        font-size: 18px; }
+    .header-date__title {
+      font: 30px/35px OpenSansBold; }
+      .header-date__title_think {
+        font: 30px/35px OpenSansLight; }
+  .speakers-info {
+    text-align: center;
+    margin: auto; }
+  .speakers-info__logo {
+    background-position: center; }
+  .about {
+    padding: 60px 20px; }
+    .about__title {
+      font-size: 35px; }
+    .about-article__title {
+      font-size: 35px; }
+    .about-article__description {
+      font-size: 30px; }
+  .advertise {
+    padding: 50px 20px; }
+    .advertise__desc {
+      text-align: center; }
+  .footer__link {
+    font-size: 27px; }
+  .footer__address {
+    font-size: 27px; } }
+
+@media screen and (max-width: 480px) {
+  .header-logo {
+    margin: auto; }
+  .header-date {
+    display: none; }
+  .info {
+    padding: 100px 0; }
+    .info-logo {
+      max-width: 200px; }
+    .info-title {
+      font: 30px/35px OpenSansLight;
+      padding: 30px 0; }
+    .info-date {
+      font: 30px/35px OpenSansLight; }
+  .about__title {
+    font-size: 30px; }
+  .about-article__title {
+    font-size: 30px; }
+  .about-article__description {
+    font-size: 25px;
+    text-align: center; }
+  .advertise {
+    padding: 50px 20px; }
+    .advertise__desc {
+      font: 30px/35px OpenSansLight, sans-serif; }
+  .footer__link {
+    font-size: 20px; }
+  .footer__address {
+    font-size: 20px; }
+  .speakers-info__desc {
+    font: 30px/35px OpenSansLight; }
+  .speakers-info__link {
+    font: 30px/35px OpenSansBold; } }
